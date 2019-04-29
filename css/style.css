@@ -1,0 +1,294 @@
+body {
+    direction: rtl;
+    font-family: 'Heebo', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.sectionIcons {
+    position: relative;
+    padding: 100px 0 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-image: url('../img/bg1.png');
+}
+
+.lamps {
+    top: 0;
+    left: 50%;
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+.sectionTitle {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.15rem;
+}
+
+.sectionTitle p {
+    margin: 0;
+}
+
+.mainCarouselContainer {
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.mainCarousel {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.clipBoard {
+    border-radius: 5px;
+    padding: 2rem .8rem;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 4px rgba(0,0,0,.10);
+}
+
+.clipBoard__btn {
+    width: 150px;
+    margin: 1rem auto;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: #28a745;
+    background-color: #28a745;
+}
+
+.slick-slide {
+    float: right;
+}
+
+.slick-dots li button:before {
+    opacity: .35;
+    font-size: 24px;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+.photo__inner {
+    background: #fff;
+    border-radius: 5px;
+    padding: 16px 16px 0;
+    box-shadow: 0 2px 8px 4px rgba(0,0,0,.10);
+}
+
+.photo {
+    margin: 18px 0 0;
+    position: relative;
+}
+
+.photo__img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.photo__title {
+    margin: 0;
+    padding: 6px 0;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Amatic SC', cursive;
+}
+
+.photo__tape {
+    left: 50%;
+    top: -15px;
+    width: 20px;
+    opacity: .65;
+    height: 30px;
+    position: absolute;
+    background-color: #8fddf3;
+    transform: translateX(-50%) rotate(-10deg);
+}
+
+.photo__text {
+    opacity: 0;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-top: 12px;
+    line-height: 1.2;
+    margin: .5rem 0 0;
+    text-align: center;
+    transform: scale(0);
+    transition: all .35s;
+}
+
+.slick-current .photo__text {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.questionForm {
+    position: relative;
+}
+
+.questionForm__cap {
+    top: 0;
+    left: 50%;
+    width: 120px;
+    position: absolute;
+    transform: translate(-50%, -70%);
+}
+
+.woman {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.speechBuble {
+    margin: 20px 0;
+    text-align: right;
+    padding: 15px 20px;
+    position: relative;
+    border-radius: 50px;
+    background-color: rgba(0,71,187,.2);
+}
+
+.speechBuble:after {
+    content: "";
+    width: 0;
+    height: 0;
+    right: 90px;
+    bottom: -20px;
+    display: block;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+
+    border-top: 20px solid rgba(0,71,187,.2);
+}
+
+.speechBuble p {
+    margin: 0;
+}
+
+.bush {
+    display: none;
+}
+
+.sectionForm {
+
+}
+
+@media(min-width: 992px) {
+    .sectionIcons {
+        height: 1080px;
+        padding: 150px 0 0;
+    }
+    .sectionTitle {
+        font-size: 2.75rem;
+        margin-bottom: 50px;
+    }
+
+    .mainCarouselContainer {
+        max-width: 1170px;
+        margin: 20px auto 0;
+    }
+
+    .mainCarousel {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    
+    .crSlide {
+        margin: 0 0 20px;
+        width: calc(100% / 3);
+    }
+
+    .photo-1 {
+        transform: translateY(3px) rotate(-2deg);
+    }
+
+    .photo-1 .photo__tape {
+        height: 45px;
+        transform: translate(-50%, 10px) rotate(3deg);
+    }
+
+    .photo-2 {
+        transform: translateY(-5px) rotate(1deg);
+    }
+
+    .photo-3 {
+        transform: translateY(15px) rotate(-1deg);
+    }
+
+    .photo-3 .photo__tape {
+        top: -18px;
+        height: 50px;
+    }
+
+    .photo-4 {
+        transform: translateY(-3px) rotate(1deg);
+    }
+
+    .photo-4 .photo__tape {
+        height: 45px;
+        transform: translate(-50%, 0px) rotate(2deg);
+    }
+
+    .photo__tape {
+        top: -30px;
+        width: 40px;
+        height: 60px;
+    }
+
+    .photo__title {
+        padding: 12px 0;
+    }
+
+    .photo__text {
+        opacity: 1;
+        font-size: 1.1rem;
+        padding: 0 1rem;
+        transform: none;
+    }
+
+    .speechBuble {
+        top: 0px;
+        margin: 0;
+        left: 60px;
+        width: 350px;
+        padding: 30px 40px;
+        position: absolute;
+    }
+
+    .woman {
+        top: 60px;  
+        right: -150px;
+        margin-bottom: 0;
+    }
+
+    .lamps {
+        left: 50%;
+        top: -50px;
+        width: 1300px;
+    }
+
+    .bush {
+        bottom: -60px;
+        left: -100px;
+        width: 100px;
+        display: block;
+        position: absolute;
+    }
+
+    .sectionForm {
+        padding-bottom: 100px;
+    }
+}

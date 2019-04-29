@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Privacy Project</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&amp;subset=hebrew" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Heebo:300,400,500,700&amp;subset=hebrew"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="section sectionIcons">
+            <img class="lamps" src="./img/lamps.png" alt="">
+
+            <div class="container">
+                <h3 class="sectionTitle">
+                    <p>אלה הן כמה מן הטכנולוגיות הבולטות</p>
+                    <p>שאוספות עלינו מידע</p>
+                </h3>
+            </div>
+
+            <div class="mainCarouselContainer">
+
+                <div class="mainCarousel row" id="main-carousel">
+                    <div class="crSlide col">
+                        <div class="photo photo-1">
+                            <div class="photo__inner">
+                                <div class="photo__tape"></div>
+
+                                <img class="photo__img" src="./img/photo-1.png" alt="סמארטפונים">
+
+                                <p class="photo__title">
+                                    מצלמות מעקב
+                                </p>
+                            </div>
+
+                            <p class="photo__text">
+                                מידע ויזואלי, זיהוי של אובייקטים שונים בתמונה - אנשים, בניינים, כלי רכב, בעלי חיים
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="crSlide col">
+                        <div class="photo photo-2">
+                            <div class="photo__inner">
+                                <div class="photo__tape"></div>
+
+                                <img class="photo__img" src="./img/photo-2.png" alt="סמארטפונים">
+
+                                <p class="photo__title">
+                                    סמארטפונים 
+                                </p>
+                            </div>
+
+                            <p class="photo__text">
+                                אנשי קשר, התכתבויות, תמונות, קבצים, קבצי קול, היסטורית גלישה, מיקום.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="crSlide col">
+                        <div class="photo photo-3">
+                            <div class="photo__inner">
+                                <div class="photo__tape"></div>
+
+                                <img class="photo__img" src="./img/photo-3.png" alt="סמארטפונים">
+
+                                <p class="photo__title">
+                                    BIG DATA
+                                </p>
+                            </div>
+
+                            <p class="photo__text">
+                                יכולת עיבוד, הצלבה וניתוח של מידע בכמויות גדולות
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="crSlide col">
+                        <div class="photo photo-4">
+                            <div class="photo__inner">
+                                <div class="photo__tape"></div>
+
+                                <img class="photo__img" src="./img/photo-4.png" alt="סמארטפונים">
+
+                                <p class="photo__title">                                   
+                                    רשתות חברתיות       
+                                </p>
+                            </div>
+
+                            <p class="photo__text">
+                                תמונות, מידע אישי, חברים ובני משפחה, תחומי ענין, תחביבים, השקפות פוליטיות
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section sectionForm">
+            <div class="container">
+                <h3 class="sectionTitle">
+                    אז מה הוא בעצם מידע אישי?
+                </h3>
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="speechBuble">
+                            <p>
+                                מידע אישי הוא מידע שמאפשר לזהות אדם מסוים.
+                                מידע אישי רגיש יכול להיות – מידע על אישיותו של אדם, הרגליו המיניים של אדם, מצב בריאותו, מצבו הכלכלי, דעותיו ואמונותיו. 
+                            </p>
+                        </div>
+
+                        <img class="woman" src="./img/character2.png" alt="">
+                    </div>
+
+                    <div class="col-xs-12 col-md-6">
+                        <img class="bush" src="./img/bush.png" alt="">
+
+                        <form id="questions-form" class="questionForm">
+                            <fieldset class="clipBoard">
+                                <h4 class="text-center mb-4">
+                                    בחרו סוג מידע שלפיו ניתן לזהות בן-אדם
+                                </h4>
+
+                                <div class="custom-control custom-switch text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                    <label class="w-100 custom-control-label" for="customSwitch1">מספר תעודת
+                                        זהות</label>
+                                </div>
+
+                                <hr>
+
+                                <div class="custom-control custom-switch text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                    <label class="w-100 custom-control-label" for="customSwitch2">חשבון ארוחה
+                                        במסעדה</label>
+                                </div>
+
+                                <hr>
+
+                                <div class="custom-control custom-switch text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                                    <label class="w-100 custom-control-label" for="customSwitch3">צילום שלי ששמור במצלמה
+                                        אבטחה בחנות</label>
+                                </div>
+
+                                <hr>
+
+                                <div class="custom-control custom-switch text-right">
+                                    <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                                    <label class="w-100 custom-control-label" for="customSwitch4">הסדרה האהובה
+                                        עליי</label>
+                                </div>
+                            </fieldset>
+
+                            <div class="text-center">
+                                <button type="button" data-toggle="modal" data-target="#answers-modal"
+                                    class="btn btn-primary btn-lg clipBoard__btn">בדוק</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="answers-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title w-100 text-center" style="direction: rtl;">
+                            אז מה נכון?
+                        </h5>
+                    </div>
+
+                    <div class="modal-body">
+                        <ul class="text-right" style="direction: rtl; font-size: 15px;">
+                            <li>
+                                בניגוד לכתובת או תאריך לידה, מספר זהות ניתן להצליב בקלות יחסית עם מידע אחר ולשייך אותו לאדם ספציפי
+                            </li>
+                            <li>
+                                לאחר התשלום במסעדה, יתכן כי הקבלה מכילה מידע אישי כגון פרטי כרטיס אשראי, חתימה, מיקום ומועד הארוחה
+                            </li>
+                            <li>
+                                מידע אישי הוא גם מידע קולי או ויזואלי שנשמר במאגר דיגיטלי. ניתן "לשלוף" את המידע בקלות אם ידוע כי ביקרתי בחנות אתמול; במקרים רבים ניתן לזהות את המצולם
+                            </li>
+                            <li>
+                                ניתן אולי לייצר רשימה של אנשים שאוהבים את אותה סדרה, אך ללא מידע נוסף, נתקשה לזהות אדם מסוים מתוך רשימה ארוכה
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" style="margin: 0 auto;" class="btn btn-primary btn-lg" data-dismiss="modal">הבנתי</button>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="./js/jquery-3.4.0.slim.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.fullpage.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
